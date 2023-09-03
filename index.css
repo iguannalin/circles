@@ -1,0 +1,65 @@
+/* @import url(small.css) (min-width:0px);
+@import url(large.css) (min-width:900px); */
+
+:root {
+  --main-bg-color: rgb(35, 35, 35);
+  --main-text-color: #f9faffde;
+  --shadow-color: #858ebc7a;
+}
+
+html {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-shadow: var(--shadow-color) -2px 2px 8px;
+}
+
+input {
+  box-shadow: 0px 2px 4px 2px #858ebc;
+  border: 0;
+  border-radius: 2px;
+  margin: 12px;
+  font-size: 16px;
+}
+
+.prompt-box {
+  margin-top: 20vh;
+  color: #f9faffde;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+  text-shadow: #858ebc -2px 2px 8px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 200px;
+  padding-top: 50px;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  font-size: 35px;
+  line-height: 12px;
+  text-transform: capitalize;
+  transition: all 0.8s ease;
+  -webkit-clip-path: circle(31% at 50% 50%);
+  clip-path: circle(31% at 50% 50%);
+  /* clip-path: circle(31% at 28% 17%); */
+  padding: 0;
+  margin: 0;
+}
